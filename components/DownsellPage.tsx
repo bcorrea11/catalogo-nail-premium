@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Check, X, LockOpen } from 'lucide-react';
+import { ArrowRight, Check, X, Unlock } from 'lucide-react';
 
 interface DownsellPageProps {
   onClose: () => void;
@@ -43,7 +43,7 @@ export const DownsellPage: React.FC<DownsellPageProps> = ({ onClose }) => {
 
                 <div className="relative z-10">
                     <div className="inline-flex items-center gap-2 bg-[#C5A083]/10 border border-[#C5A083]/30 text-[#C5A083] px-4 py-1.5 rounded-full mb-4 backdrop-blur-md">
-                        <LockOpen className="w-3 h-3" />
+                        <Unlock className="w-3 h-3" />
                         <span className="text-[9px] font-black uppercase tracking-[0.2em]">Condição Desbloqueada</span>
                     </div>
                     
