@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Nail Premium | Design de Luxo para sua Agenda</title>
+    
+    <!-- Tailwind CSS via CDN (Mantendo para facilitar, mas em produção recomenda-se build process) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- UTMify Main Script -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+
+    <!-- Facebook Pixel / UTMify Pixel -->
+    <script>
+      window.pixelId = "697390e6b321de1b96eccf10";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+
+    <style>
+      :root {
+        --nude: #f3e9e3;
+        --brown: #5d4037;
+        --champagne: #C5A083;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--nude);
+        color: var(--brown);
+        overflow-x: hidden;
+      }
+      
+      /* Marble Background Effect */
+      .marble-bg {
+        background-color: #f3e9e3;
+        background-image: 
+          radial-gradient(at 10% 10%, rgba(255,255,255,0.8) 0%, transparent 50%),
+          radial-gradient(at 90% 90%, rgba(148, 108, 78, 0.05) 0%, transparent 50%),
+          url('https://www.transparenttextures.com/patterns/white-marble.png');
+        background-blend-mode: overlay;
+      }
+
+      /* Novo Gradiente Champagne/Bronze - Mais harmônico com Marrom/Bege */
+      .bg-gold-metallic {
+        background: linear-gradient(135deg, #BFA080 0%, #F2E3D5 50%, #A68064 100%);
+      }
+      
+      .text-gold-metallic {
+        background: linear-gradient(135deg, #BFA080 0%, #F2E3D5 50%, #A68064 100%); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        color: #C5A083; /* Fallback */
+      }
+
+      .border-gold {
+        border-color: #D6C0A9;
+      }
+
+      .btn-gold {
+        background: linear-gradient(135deg, #C6A686 0%, #E8D5C4 50%, #AB8669 100%);
+        color: #3e2723;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px -10px rgba(166, 128, 100, 0.4);
+      }
+      
+      .btn-gold:active {
+        transform: scale(0.96);
+        filter: brightness(0.95);
+      }
+
+      .card-premium-shadow {
+        box-shadow: 0 25px 50px -12px rgba(93, 64, 55, 0.4);
+      }
+
+      html { scroll-behavior: smooth; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="marble-bg">
+    <div id="root"></div>
+    <!-- Entry Point do Vite -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
