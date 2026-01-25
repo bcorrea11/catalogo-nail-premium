@@ -46,7 +46,7 @@ export const SocialProof: React.FC = () => {
             
             <div className="flex items-center gap-4 mb-4">
               <div className="p-[2px] bg-gradient-to-br from-[#C5A083] to-transparent rounded-full shadow-sm">
-                <img src={rev.img} alt={rev.name} className="w-12 h-12 rounded-full object-cover border-2 border-white" />
+                <img src={rev.img} alt={rev.name} width="48" height="48" loading="lazy" className="w-12 h-12 rounded-full object-cover border-2 border-white" />
               </div>
               <div>
                 <h4 className="font-bold text-[#5d4037] text-sm uppercase">{rev.name}</h4>

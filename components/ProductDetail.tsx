@@ -21,9 +21,12 @@ export const ProductDetail: React.FC = () => {
           {/* Imagem do Produto Principal */}
           <div className="w-full md:w-1/2 relative">
              <div className="absolute inset-0 bg-[#C5A083] blur-[60px] opacity-20 rounded-full"></div>
-             <img 
-               src="https://i.imgur.com/4SvNhs5.png" 
-               alt="Catálogo Nail Premium Aberto" 
+             <img
+               src="https://i.imgur.com/4SvNhs5.png"
+               alt="Catálogo Nail Premium Aberto"
+               width="800"
+               height="800"
+               fetchPriority="high"
                className="relative z-10 w-full rounded-[30px] shadow-[0_20px_50px_-10px_rgba(93,64,55,0.3)] transform hover:scale-[1.02] transition-transform duration-500"
              />
              {/* Selo Flutuante */}

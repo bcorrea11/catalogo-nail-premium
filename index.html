@@ -2,98 +2,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N4BJ7RWS');</script>
-<!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catálogo Nail Premium | Design de Luxo para sua Agenda</title>
-    
-    <!-- Tailwind CSS via CDN (Mantendo para facilitar, mas em produção recomenda-se build process) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- UTMify Main Script -->
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      async
-      defer
-    ></script>
 
-    <!-- Facebook Pixel / UTMify Pixel -->
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://i.imgur.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+    <!-- Preload Critical Font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+
+    <!-- Google Tag Manager - Async -->
     <script>
-      window.pixelId = "697390e6b321de1b96eccf10";
-      var a = document.createElement("script");
-      a.setAttribute("async", "");
-      a.setAttribute("defer", "");
-      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
+      window.dataLayer = window.dataLayer || [];
+      (function(w,d,s,l,i){
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-N4BJ7RWS');
     </script>
 
-    <style>
-      :root {
-        --nude: #f3e9e3;
-        --brown: #5d4037;
-        --champagne: #C5A083;
-      }
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: var(--nude);
-        color: var(--brown);
-        overflow-x: hidden;
-      }
-      
-      /* Marble Background Effect */
-      .marble-bg {
-        background-color: #f3e9e3;
-        background-image: 
-          radial-gradient(at 10% 10%, rgba(255,255,255,0.8) 0%, transparent 50%),
-          radial-gradient(at 90% 90%, rgba(148, 108, 78, 0.05) 0%, transparent 50%),
-          url('https://www.transparenttextures.com/patterns/white-marble.png');
-        background-blend-mode: overlay;
-      }
+    <!-- UTMify & Pixel - Deferred -->
+    <script>
+      window.pixelId = "697390e6b321de1b96eccf10";
+      function loadAnalytics() {
+        var u = document.createElement("script");
+        u.async = true;
+        u.defer = true;
+        u.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+        u.setAttribute("data-utmify-prevent-xcod-sck", "");
+        u.setAttribute("data-utmify-prevent-subids", "");
+        document.head.appendChild(u);
 
-      /* Novo Gradiente Champagne/Bronze - Mais harmônico com Marrom/Bege */
-      .bg-gold-metallic {
-        background: linear-gradient(135deg, #BFA080 0%, #F2E3D5 50%, #A68064 100%);
+        var p = document.createElement("script");
+        p.async = true;
+        p.defer = true;
+        p.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+        document.head.appendChild(p);
       }
-      
-      .text-gold-metallic {
-        background: linear-gradient(135deg, #BFA080 0%, #F2E3D5 50%, #A68064 100%); 
-        -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent; 
-        color: #C5A083; /* Fallback */
+      if (document.readyState === 'complete') {
+        setTimeout(loadAnalytics, 1000);
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(loadAnalytics, 1000);
+        });
       }
-
-      .border-gold {
-        border-color: #D6C0A9;
-      }
-
-      .btn-gold {
-        background: linear-gradient(135deg, #C6A686 0%, #E8D5C4 50%, #AB8669 100%);
-        color: #3e2723;
-        transition: all 0.3s ease;
-        box-shadow: 0 10px 30px -10px rgba(166, 128, 100, 0.4);
-      }
-      
-      .btn-gold:active {
-        transform: scale(0.96);
-        filter: brightness(0.95);
-      }
-
-      .card-premium-shadow {
-        box-shadow: 0 25px 50px -12px rgba(93, 64, 55, 0.4);
-      }
-
-      html { scroll-behavior: smooth; }
-    </style>
+    </script>
   <script type="importmap">
 {
   "imports": {

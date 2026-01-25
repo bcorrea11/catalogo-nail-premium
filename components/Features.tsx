@@ -49,9 +49,12 @@ export const Features: React.FC = () => {
               <div className="flex items-center gap-5">
                 {/* Imagem do Mockup */}
                 <div className="flex-shrink-0 w-20 h-20 rounded-2xl bg-[#f8f5f2] border border-[#f3e9e3] shadow-inner overflow-hidden group-hover:scale-105 transition-transform duration-300">
-                  <img 
-                    src={item.img} 
-                    alt={item.title} 
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    width="80"
+                    height="80"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
