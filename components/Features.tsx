@@ -4,27 +4,27 @@ import React from 'react';
 export const Features: React.FC = () => {
   const products = [
     {
-      img: "https://i.imgur.com/FrbJl6L.png", // Catálogo Classic
+      img: "/Catálogo-Nail-Classic.webp",
       title: "Catálogo Nail Classic",
       desc: "Versatilidade para o seu negócio. Uma segunda opção de layout com design minimalista e atemporal, focado na clareza para atrair clientes exigentes."
     },
     {
-      img: "https://i.imgur.com/3VR7VDw.png", // Pós-atendimento
+      img: "/Guia-de-Pós-Atendimento.webp",
       title: "Guia de Pós-Atendimento",
       desc: "O segredo para a cliente voltar. Um material educativo e elegante que ensina os cuidados pós-unha, demonstrando sua preocupação e profissionalismo."
     },
     {
-      img: "https://i.imgur.com/hDZonnz.png", // Figurinhas
+      img: "/Pack-de-Figurinhas-Gold.webp",
       title: "Pack de Figurinhas Gold",
       desc: "Abandone os GIFs infantis. Receba um pacote de stickers adesivos (png) com estética dourada e minimalista para deixar seus stories com 'cara de loja cara'."
     },
     {
-      img: "https://i.imgur.com/0RowsMw.png", // Ideias de Stories
+      img: "/150-Ideias-de-Conteúdo.webp",
       title: "+150 Ideias de Conteúdo",
       desc: "Um cronograma estratégico para quem não tem tempo. Saiba exatamente o que postar para transformar seguidoras em clientes pagantes."
     },
     {
-      img: "https://i.imgur.com/FQJrMyn.png", // Feed
+      img: "/10-artes-para-o-seu-Instagram.webp",
       title: "10 Artes para o seu Instagram",
       desc: "Templates de Feed e Stories prontos. Apenas insira a foto da unha da sua cliente e veja a mágica acontecer. Design limpo que destaca o seu trabalho."
     }
