@@ -1,16 +1,21 @@
 
 import React from 'react';
 import { Check, ShieldCheck } from 'lucide-react';
+import { useUTMParams, buildCheckoutUrl } from '../hooks/useUTMParams';
 
 interface PricingProps {
   onBasicClick: () => void;
 }
 
 export const Pricing: React.FC<PricingProps> = ({ onBasicClick }) => {
-  
+  const utmParams = useUTMParams();
+
   const handlePremiumCheckout = () => {
-    // Link do Checkout do Kit Completo (R$ 24,90)
-    window.location.href = "https://pay.lowify.com.br/checkout?product_id=chnhDq";
+    const checkoutUrl = buildCheckoutUrl(
+      "https://pay.lowify.com.br/checkout?product_id=chnhDq",
+      utmParams
+    );
+    window.location.href = checkoutUrl;
   };
 
   return (

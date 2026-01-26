@@ -1,16 +1,21 @@
 
 import React from 'react';
 import { ArrowRight, Check, X, Unlock } from 'lucide-react';
+import { useUTMParams, buildCheckoutUrl } from '../hooks/useUTMParams';
 
 interface DownsellPageProps {
   onClose: () => void;
 }
 
 export const DownsellPage: React.FC<DownsellPageProps> = ({ onClose }) => {
-  
+  const utmParams = useUTMParams();
+
   const handleDiscountCheckout = () => {
-    // Link do Checkout com Desconto (R$ 17,40)
-    window.location.href = "https://pay.lowify.com.br/checkout?product_id=5UhkcF";
+    const checkoutUrl = buildCheckoutUrl(
+      "https://pay.lowify.com.br/checkout?product_id=5UhkcF",
+      utmParams
+    );
+    window.location.href = checkoutUrl;
   };
 
   return (

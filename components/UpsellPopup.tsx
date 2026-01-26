@@ -1,21 +1,29 @@
 
 import React from 'react';
 import { X, Tag } from 'lucide-react';
+import { useUTMParams, buildCheckoutUrl } from '../hooks/useUTMParams';
 
 interface UpsellPopupProps {
   onClose: () => void;
 }
 
 export const UpsellPopup: React.FC<UpsellPopupProps> = ({ onClose }) => {
-  
+  const utmParams = useUTMParams();
+
   const handleAcceptUpsell = () => {
-    // LINK DO CHECKOUT COM DESCONTO (R$ 17,40)
-    window.location.href = "https://pay.lowify.com.br/checkout?product_id=5UhkcF";
+    const checkoutUrl = buildCheckoutUrl(
+      "https://pay.lowify.com.br/checkout?product_id=5UhkcF",
+      utmParams
+    );
+    window.location.href = checkoutUrl;
   };
 
   const handleDeclineUpsell = () => {
-    // SE A PESSOA RECUSAR, ELA VAI PARA O CHECKOUT NORMAL (R$ 10,00)
-    window.location.href = "https://pay.lowify.com.br/checkout?product_id=XwDRmT";
+    const checkoutUrl = buildCheckoutUrl(
+      "https://pay.lowify.com.br/checkout?product_id=XwDRmT",
+      utmParams
+    );
+    window.location.href = checkoutUrl;
   };
 
   return (

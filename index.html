@@ -67,29 +67,6 @@
 }
 </script>
 <link rel="stylesheet" href="/index.css">
-
-    <script>
-  function attachUtmsToButtons() {
-    const params = window.location.search; // Pega tudo depois da '?' na URL
-    if (!params) return;
-
-    // Seleciona todos os links que levam para o checkout da Lowify
-    const checkoutLinks = document.querySelectorAll('a[href*="pay.lowify.com.br"]');
-    
-    checkoutLinks.forEach(link => {
-      const currentHref = link.getAttribute('href');
-      // Se o link já não tiver os parâmetros, a gente cola eles
-      if (!currentHref.includes('&utm_') && !currentHref.includes('?utm_')) {
-        link.setAttribute('href', currentHref + params.replace('?', '&'));
-      }
-    });
-  }
-
-  // Executa assim que a página carrega e após 1 segundo (pra dar tempo do React renderizar)
-  window.addEventListener('load', attachUtmsToButtons);
-  setTimeout(attachUtmsToButtons, 1500);
-</script>
-    
 </head>
   <body class="marble-bg">
     <!-- Google Tag Manager (noscript) -->
