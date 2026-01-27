@@ -4,27 +4,27 @@ import React from 'react';
 export const Features: React.FC = () => {
   const products = [
     {
-      img: "/Catálogo-Nail-Classic.webp",
+      img: "/catalogo-nail-classic.webp",
       title: "Catálogo Nail Classic",
       desc: "Versatilidade para o seu negócio. Uma segunda opção de layout com design minimalista e atemporal, focado na clareza para atrair clientes exigentes."
     },
     {
-      img: "/Guia-de-Pós-Atendimento.webp",
+      img: "/guia-pos-atendimento.webp",
       title: "Guia de Pós-Atendimento",
       desc: "O segredo para a cliente voltar. Um material educativo e elegante que ensina os cuidados pós-unha, demonstrando sua preocupação e profissionalismo."
     },
     {
-      img: "/Pack-de-Figurinhas-Gold.webp",
+      img: "/pack-figurinhas.webp",
       title: "Pack de Figurinhas Gold",
       desc: "Abandone os GIFs infantis. Receba um pacote de stickers adesivos (png) com estética dourada e minimalista para deixar seus stories com 'cara de loja cara'."
     },
     {
-      img: "/150-Ideias-de-Conteúdo.webp",
+      img: "/150-ideias-de-conteudo.webp",
       title: "+150 Ideias de Conteúdo",
       desc: "Um cronograma estratégico para quem não tem tempo. Saiba exatamente o que postar para transformar seguidoras em clientes pagantes."
     },
     {
-      img: "/10-artes-para-o-seu-Instagram.webp",
+      img: "/10-artes-para-o-seu-instagram.webp",
       title: "10 Artes para o seu Instagram",
       desc: "Templates de Feed e Stories prontos. Apenas insira a foto da unha da sua cliente e veja a mágica acontecer. Design limpo que destaca o seu trabalho."
     }
@@ -36,7 +36,7 @@ export const Features: React.FC = () => {
         <div className="text-center mb-12">
           <span className="text-[10px] font-bold text-[#AB8669] uppercase tracking-[0.2em] mb-2 block">Quer ir além do básico?</span>
           <h2 className="text-3xl font-black text-[#5d4037] uppercase leading-none mb-4">
-            Leve Também o <br/> <span className="text-gold-metallic">Kit Completo</span>
+            Leve Também o <br /> <span className="text-gold-metallic">Kit Completo</span>
           </h2>
           <p className="text-xs text-[#8d6e63] max-w-xs mx-auto">
             Além do Catálogo Principal, o <strong>Combo Nail Express</strong> desbloqueia todo esse ecossistema para sua marca:
@@ -55,10 +55,11 @@ export const Features: React.FC = () => {
                     width="80"
                     height="80"
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                
+
                 <div>
                   <h3 className="text-sm font-black text-[#5d4037] uppercase tracking-wide mb-1">{item.title}</h3>
                   <p className="text-xs text-[#8d6e63] leading-relaxed font-medium opacity-90 pr-2">
