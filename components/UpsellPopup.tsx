@@ -92,11 +92,11 @@ export const UpsellPopup: React.FC<UpsellPopupProps> = ({ onClose }) => {
                 Quero com Desconto
               </button>
               
-              <button 
+              <button
                 onClick={handleDeclineUpsell}
                 className="w-full py-3 rounded-xl border border-white/10 text-[9px] text-white/40 font-bold uppercase tracking-widest hover:bg-white/5 hover:text-white transition-all"
               >
-                Não, prefiro pagar mais caro depois
+                Não, ainda prefiro o plano de R$ 10,00
               </button>
             </div>
 

@@ -92,10 +92,6 @@ export const ProductDetail: React.FC = () => {
              <div className="w-full md:max-w-sm">
                <div id="vidalytics_embed_J6qI3f2n2WKN3uW5" style={{ width: '100%', position: 'relative', paddingTop: '178.22%' }} className="rounded-[30px] overflow-hidden shadow-[0_20px_50px_-10px_rgba(93,64,55,0.3)]"></div>
              </div>
-             {/* Selo Flutuante */}
-             <div className="absolute bottom-0 right-6 z-20 bg-white p-4 rounded-2xl shadow-xl border border-[#f3e9e3] animate-bounce-slow md:relative md:bottom-auto md:right-auto md:-ml-12">
-                <p className="text-[10px] font-black uppercase text-[#8d6e63] tracking-widest text-center">100%<br/>Editável</p>
-             </div>
           </div>
 
           {/* Copy de Vendas do Produto Principal */}
