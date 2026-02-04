@@ -12,7 +12,7 @@ export const UpsellPopup: React.FC<UpsellPopupProps> = ({ onClose }) => {
 
   const handleAcceptUpsell = () => {
     const checkoutUrl = buildCheckoutUrl(
-      "https://pay.lowify.com.br/checkout?product_id=5UhkcF",
+      "https://pagamentoseguro.eusounat.com.br/checkout/v5/C7tKjbLkKAxKhYmwn0BH",
       utmParams
     );
     window.location.href = checkoutUrl;
@@ -20,7 +20,7 @@ export const UpsellPopup: React.FC<UpsellPopupProps> = ({ onClose }) => {
 
   const handleDeclineUpsell = () => {
     const checkoutUrl = buildCheckoutUrl(
-      "https://pay.lowify.com.br/checkout?product_id=XwDRmT",
+      "https://pagamentoseguro.eusounat.com.br/checkout/v5/8C5fM1hH8GQm9TpxB23C",
       utmParams
     );
     window.location.href = checkoutUrl;
