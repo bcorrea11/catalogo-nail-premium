@@ -10,30 +10,27 @@ interface PricingProps {
 export const Pricing: React.FC<PricingProps> = ({ onBasicClick }) => {
   const utmParams = useUTMParams();
 
-  const handlePremiumCheckout = () => {
-    const checkoutUrl = buildCheckoutUrl(
-      "https://pagamentoseguro.eusounat.com.br/checkout/v5/hQ5YD0lOZGBlCvUwwdfs",
-      utmParams
-    );
-    window.location.href = checkoutUrl;
-  };
+  const premiumCheckoutUrl = buildCheckoutUrl(
+    "https://pagamentoseguro.eusounat.com.br/checkout/v5/hQ5YD0lOZGBlCvUwwdfs",
+    utmParams
+  );
 
   return (
     <section id="precos" className="py-24 px-6 relative">
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-black uppercase text-[#5d4037] leading-none mb-4">Escolha <br/>seu Plano</h2>
+        <h2 className="text-3xl font-black uppercase text-[#5d4037] leading-none mb-4">Escolha <br />seu Plano</h2>
         <p className="text-xs uppercase tracking-widest text-[#8d6e63]">Investimento único • Acesso vitalício</p>
       </div>
 
       <div className="space-y-8 max-w-sm mx-auto">
-        
+
         {/* === PLANO BÁSICO (1º) === */}
         <div className="bg-white border-2 border-[#f3e9e3] rounded-[30px] p-8 relative">
           <div className="absolute top-0 right-0 left-0 h-1 bg-[#f3e9e3] mx-10 rounded-b-lg"></div>
-          
+
           <div className="text-center mb-6">
-             <h3 className="text-[#8d6e63] text-[10px] font-black uppercase tracking-[0.2em] mb-2">Entrada</h3>
-             <p className="text-[#5d4037] font-bold text-sm">Catálogo Individual</p>
+            <h3 className="text-[#8d6e63] text-[10px] font-black uppercase tracking-[0.2em] mb-2">Entrada</h3>
+            <p className="text-[#5d4037] font-bold text-sm">Catálogo Individual</p>
           </div>
 
           <div className="flex items-baseline justify-center gap-1 text-[#5d4037] mb-8">
@@ -42,21 +39,21 @@ export const Pricing: React.FC<PricingProps> = ({ onBasicClick }) => {
           </div>
 
           <div className="space-y-3 mb-8 px-2 opacity-80">
-             <div className="flex items-center gap-3">
-                <div className="bg-[#f3e9e3] p-1 rounded-full"><Check className="w-3 h-3 text-[#5d4037]" /></div>
-                <span className="text-xs font-bold text-[#5d4037]">Catálogo Nail Premium</span>
-             </div>
-             <div className="flex items-center gap-3 opacity-40">
-                <div className="border border-gray-200 p-1 rounded-full"><Check className="w-3 h-3 text-transparent" /></div>
-                <span className="text-xs text-[#8d6e63]">Catálogo Classic</span>
-             </div>
-             <div className="flex items-center gap-3 opacity-40">
-                <div className="border border-gray-200 p-1 rounded-full"><Check className="w-3 h-3 text-transparent" /></div>
-                <span className="text-xs text-[#8d6e63]">Bônus Exclusivos</span>
-             </div>
+            <div className="flex items-center gap-3">
+              <div className="bg-[#f3e9e3] p-1 rounded-full"><Check className="w-3 h-3 text-[#5d4037]" /></div>
+              <span className="text-xs font-bold text-[#5d4037]">Catálogo Nail Premium</span>
+            </div>
+            <div className="flex items-center gap-3 opacity-40">
+              <div className="border border-gray-200 p-1 rounded-full"><Check className="w-3 h-3 text-transparent" /></div>
+              <span className="text-xs text-[#8d6e63]">Catálogo Classic</span>
+            </div>
+            <div className="flex items-center gap-3 opacity-40">
+              <div className="border border-gray-200 p-1 rounded-full"><Check className="w-3 h-3 text-transparent" /></div>
+              <span className="text-xs text-[#8d6e63]">Bônus Exclusivos</span>
+            </div>
           </div>
 
-          <button 
+          <button
             onClick={onBasicClick}
             className="w-full py-4 bg-[#f8f5f2] border border-[#eaddcf] rounded-xl text-[10px] font-black uppercase tracking-widest text-[#946c4e] hover:bg-[#eaddcf] transition-colors"
           >
@@ -77,10 +74,10 @@ export const Pricing: React.FC<PricingProps> = ({ onBasicClick }) => {
           <div className="relative bg-[#2a1e16] rounded-[40px] p-1 text-center card-premium-shadow overflow-hidden transform scale-105">
             {/* Inner Content - Padding bottom reduzido para 6 (24px) e margem da lista reduzida */}
             <div className="bg-gradient-to-b from-[#3e2b22] to-[#1a110d] rounded-[36px] pt-8 pb-6 px-6 relative">
-              
+
               {/* Champagne Accents */}
               <div className="absolute top-0 right-0 w-40 h-40 bg-[#C5A083] opacity-10 blur-[60px] rounded-full"></div>
-              
+
               <h3 className="text-gold-metallic text-sm font-black uppercase tracking-[0.2em] mb-1 mt-3">Combo Nail Express</h3>
               <p className="text-white/40 text-[10px] uppercase tracking-widest mb-6">Experiência Completa</p>
 
@@ -112,12 +109,12 @@ export const Pricing: React.FC<PricingProps> = ({ onBasicClick }) => {
                 ))}
               </ul>
 
-              <button 
-                onClick={handlePremiumCheckout}
-                className="w-full btn-gold py-5 rounded-2xl font-black text-sm uppercase tracking-widest shadow-[0_0_25px_rgba(197,160,131,0.3)] animate-pulse hover:scale-[1.02] transition-transform"
+              <a
+                href={premiumCheckoutUrl}
+                className="w-full btn-gold py-5 rounded-2xl font-black text-sm uppercase tracking-widest shadow-[0_0_25px_rgba(197,160,131,0.3)] animate-pulse hover:scale-[1.02] transition-transform block text-center"
               >
                 Quero o Kit Completo
-              </button>
+              </a>
             </div>
           </div>
         </div>
