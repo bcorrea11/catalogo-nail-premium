@@ -11,7 +11,7 @@ export const DownsellPage: React.FC<DownsellPageProps> = ({ onClose }) => {
   const utmParams = useUTMParams();
 
   const discountCheckoutUrl = buildCheckoutUrl(
-    "https://pagamentoseguro.eusounat.com.br/checkout/v5/C7tKjbLkKAxKhYmwn0BH",
+    "https://pay.lowify.com.br/checkout?product_id=5UhkcF",
     utmParams
   );
 

@@ -11,12 +11,12 @@ export const UpsellPopup: React.FC<UpsellPopupProps> = ({ onClose }) => {
   const utmParams = useUTMParams();
 
   const acceptUpsellUrl = buildCheckoutUrl(
-    "https://pagamentoseguro.eusounat.com.br/checkout/v5/C7tKjbLkKAxKhYmwn0BH",
+    "https://pay.lowify.com.br/checkout?product_id=5UhkcF",
     utmParams
   );
 
   const declineUpsellUrl = buildCheckoutUrl(
-    "https://pagamentoseguro.eusounat.com.br/checkout/v5/8C5fM1hH8GQm9TpxB23C",
+    "https://pay.lowify.com.br/checkout?product_id=H6nPYJ",
     utmParams
   );
 

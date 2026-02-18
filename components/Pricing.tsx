@@ -11,7 +11,7 @@ export const Pricing: React.FC<PricingProps> = ({ onBasicClick }) => {
   const utmParams = useUTMParams();
 
   const premiumCheckoutUrl = buildCheckoutUrl(
-    "https://pagamentoseguro.eusounat.com.br/checkout/v5/hQ5YD0lOZGBlCvUwwdfs",
+    "https://pay.lowify.com.br/checkout?product_id=chnhDq",
     utmParams
   );
 

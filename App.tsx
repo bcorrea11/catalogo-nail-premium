@@ -12,6 +12,7 @@ import { Header } from './components/Header';
 import { SalesNotification } from './components/SalesNotification';
 import { BackRedirectHandler } from './components/BackRedirectHandler';
 import { DownsellPage } from './components/DownsellPage';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 const App: React.FC = () => {
   const [isUpsellVisible, setIsUpsellVisible] = useState(false);
@@ -39,7 +40,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen marble-bg text-neutral-800 selection:bg-gold-200">
       <Header />
-      
+
       {/* Lógica de "Back Redirect" agora abre a página de Downsell */}
       <BackRedirectHandler onTrigger={handleTriggerDownsell} />
 
@@ -56,13 +57,14 @@ const App: React.FC = () => {
           <FAQ />
         </main>
       )}
-      
+
       {/* Footer só aparece se não estiver no Downsell (para focar na conversão) */}
       {!isDownsellPageVisible && <Footer />}
-      
+
       {/* Notificações continuam aparecendo */}
       <SalesNotification />
-      
+      <WhatsAppButton />
+
       {isUpsellVisible && !isDownsellPageVisible && (
         <UpsellPopup onClose={handleCloseUpsell} />
       )}
