@@ -12,7 +12,7 @@ import { Header } from './components/Header';
 import { SalesNotification } from './components/SalesNotification';
 import { BackRedirectHandler } from './components/BackRedirectHandler';
 import { DownsellPage } from './components/DownsellPage';
-import { WhatsAppButton } from './components/WhatsAppButton';
+
 
 const App: React.FC = () => {
   const [isUpsellVisible, setIsUpsellVisible] = useState(false);
@@ -63,7 +63,7 @@ const App: React.FC = () => {
 
       {/* Notificações continuam aparecendo */}
       <SalesNotification />
-      <WhatsAppButton />
+
 
       {isUpsellVisible && !isDownsellPageVisible && (
         <UpsellPopup onClose={handleCloseUpsell} />
